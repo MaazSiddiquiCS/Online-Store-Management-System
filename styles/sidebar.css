@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border:border-box;
+    padding: 0;
+}
+.Sidebar
+{
+    height: 100vh;
+    box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+    width: 280px;
+    background-color: #F9FAFB;
+    top: 0;
+    padding: 5px;
+    position: fixed;
+    color: #2563EB;
+    z-index: 1000;
+}
+.Sidebar .all i{
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 5px;
+}
+.Sidebar .all{
+    display: inline-block;
+}
+.Category{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.Popular
+{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.Account
+{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.FAQs
+{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+ul li{
+    margin-top: 5px;
+    margin-right: auto;
+    list-style: none;
+    font-size: 18px;
+}
