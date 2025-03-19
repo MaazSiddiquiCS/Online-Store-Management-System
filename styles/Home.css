@@ -262,18 +262,7 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    .Sidebar {
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-        position: absolute;
-        transform: translateX(-100%);
-    }
-
-    .Sidebar.active {
-        transform: translateX(0);
-    }
-
+    
     .Hero {
         max-width: 100%;
     }
