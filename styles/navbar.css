@@ -101,17 +101,21 @@
     font-size: 24px;
     margin-left: 10px;
 }
-/* Media Queries for Mobile Responsiveness */
-/* Media Queries for Mobile Responsiveness */
+
 @media screen and (max-width: 768px) {
     .Navbar {
-        justify-content: space-evenly; /* Better spacing for mobile */
+         /* Better spacing for mobile */
         padding: 5px;
-        flex-wrap: nowrap; /* Prevents navbar from exceeding viewport */
-        width: 97.5vw; /* Ensures it stays within the screen */
+        width: 100vw; /* Ensures it stays within the screen */
         overflow: hidden; /* Prevents overflow issues */
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
     }
-
+    .border:hover{
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }
     .logo {
         width: 40px; /* Smaller logo for mobile */
         height: 25px;
@@ -129,7 +133,7 @@
     }
 
     .nav-search {
-        width: 35%; /* Adjust search bar width */
+         /* Adjust search bar width */
         margin: 5px;
         padding: 5px;
     }
@@ -148,11 +152,10 @@
 
     .account {
         width: auto; /* Allow account container to shrink */
-        margin-right: 10px;
+        margin-right: 20px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0px; /* Adds spacing between cart and account */
+        /* align-items: center;
+        justify-content: center; */
     }
 
     .account p {
@@ -170,11 +173,11 @@
     }
 
     .nav-search {
-        width: 40%; /* Further adjust search bar width */
+        width: 52%; /* Further adjust search bar width */
     }
 
-    .logo {
-        width: 80px;
+    .navbar .logo {
+        width:25px;
         height: 20px;
     }
 
