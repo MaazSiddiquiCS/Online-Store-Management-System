@@ -4,7 +4,8 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: #FFFFFF; /* White text for footer */
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
 }
 
 .Up {
@@ -21,7 +22,7 @@ footer {
 }
 
 .Up:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Up i {
@@ -31,51 +32,47 @@ footer {
 
 .Foot-container {
     background-color: #1E3A8A;
-    height: 620px;
+    height: auto;
     width: 100%;
+    padding: 20px 0;
 }
 
 h3 {
     padding-bottom: 10px;
 }
 
-.panel-1 {
-    margin-left: 30px;
-    align-self: center;
-    justify-content: space-evenly;
+.panel-1, .panel-2 {
     display: flex;
-    margin-top: 60px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
     color: #F9FAFB;
     font-size: small;
+    padding: 20px;
 }
 
-.About, .quick, .contact, .GTK { 
+.About, .quick, .contact, .GTK {
     display: flex;
     flex-direction: column;
     width: 220px;
     padding: 30px;
 }
 
-.quick a, .contact span, .contact span a ,.GTK a{
-    margin-bottom: 20px;
+.quick a, .contact span, .contact span a, .GTK a {
+    margin-bottom: 15px;
     color: #F9FAFB;
     text-decoration: none;
 }
 
 .foot-line {
     border-top: 1px solid #F9FAFB;
-    margin-top: 40px;
-    width: 100%;
+    margin: 40px auto;
+    width: 90%;
 }
-.panel-2 {
-    align-self: center;
-    justify-content: space-evenly;
-    display: flex;
-    margin-top: 60px;
-    color: #F9FAFB;
-}
+
 .pay-method
 {
+    margin-top: 20px;
     justify-content: space-evenly;
 }
 .pay-method i
@@ -83,27 +80,89 @@ h3 {
     font-size: xx-large;
     padding-right: 5px;
 }
-.panel-3
-{
-    margin-top: 80px;
-    height:120px;
+
+.panel-3 {
+    margin-top: 40px;
     background-color: #172B66;
-    align-content:center;
+    padding: 20px 10px;
+    text-align: center;
 }
-.handles i
-{
-    font-size: x-large;
-    margin-top: 5px;
-}
-.handles
-{
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-}
-.panel-3 p
-{
+
+.handles {
     display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.handles i {
+    font-size: x-large;
+}
+
+.panel-3 p {
     font-size: smaller;
-    justify-content:right;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .panel-1, .panel-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .About, .quick, .contact, .GTK {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .foot-line {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .panel-1, .panel-2 {
+        flex-direction: column;
+    }
+
+    .About, .quick, .contact, .GTK {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .foot-line {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .panel-1, .panel-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About, .quick, .contact, .GTK {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foot-line {
+        width: 90%;
+    }
+
+    .handles {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .panel-3 p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .logo
+    {
+        height: 30px;
+    width: 120px;
+    }
 }

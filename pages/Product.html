@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../styles/product.css">
     <title>Online Store Management System</title>
 </head>
 <body>
@@ -13,6 +15,312 @@
         <div class="navbar"></div>
         <div class="sidebar"></div>
     </header>
+    <main>
+        <section class="container2">
+            <div class="Products-Box">
+                <div class="img-box">
+                    <div class="product-cover"></div>
+                </div>
+                <div class="product-details">
+                    <h1 class="p-title">Bagwati</h1>
+                    <p class="p-description">
+                        A stylish and durable bag suitable for all occasions. Made from high-quality materials to ensure longevity and elegance.
+                    </p>
+            
+                    <!-- Star Rating -->
+                    <div class="rating-product">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="rating-value">(4.0)</span>
+                        </div>                        
+                    </div>
+            
+                    <!-- Price Section -->
+                    <div class="price">
+                        <p class="p-price">$49.99</p>
+                        <p class="price-discount">-12%</p>
+                        <p class="old-price">$56.99</p>
+                    </div>
+                    <div class="availability">In Stock</div>
+            
+                    <!-- Key Features -->
+                    <div class="key-features">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Premium Leather Material</li>
+                            <li><i class="fas fa-check-circle"></i> Spacious & Lightweight</li>
+                            <li><i class="fas fa-check-circle"></i> Adjustable Shoulder Strap</li>
+                            <li><i class="fas fa-check-circle"></i> Water-resistant</li>
+                        </ul>
+                    </div>
+                    <!-- Action Buttons -->
+                    <div class="actions">
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <button class="buy-now"><i class="fas fa-bolt"></i> Buy Now</button>
+                    </div>
+                    <!-- Specifications Section -->
+                    <div class="specifications">
+                        <h3>Specifications:</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td><strong>Brand</strong></td>
+                                <td>Bagwati</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Material</strong></td>
+                                <td>Premium Leather</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color</strong></td>
+                                <td>Brown, Black, Navy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dimensions</strong></td>
+                                <td>12" x 8" x 4"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weight</strong></td>
+                                <td>800g</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Strap Type</strong></td>
+                                <td>Adjustable Shoulder Strap</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Water Resistance</strong></td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Closure Type</strong></td>
+                                <td>Zipper</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="ship-details">
+                    <span class="quantity">
+                        <label for="qt">Quantity: </label>
+                        <select name="quantity-select" id="qt">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10+</option>
+                        </select>
+                    </span>
+                    <div class="color-picker">
+                        <span>Color:</span>
+                        <button class="color-btn" value="red" style="background-color: red;"></button>
+                        <button class="color-btn" value="green" style="background-color: green;"></button>
+                        <button class="color-btn" value="black" style="background-color: black;"></button>
+                        <button class="color-btn" value="blue" style="background-color: blue;"></button>
+                    </div>
+                     <!-- Delivery Information -->
+                     <div class="delivery-info">
+                        <p><i class="fas fa-truck"></i> Estimated Delivery: <b>March 25 - March 28</b></p>
+                        
+                        <div class="location">
+                            <label for="location-select"><i class="fas fa-map-marker-alt"></i> Select Delivery Location:</label>
+                            <select id="location-select">
+                                <option value="default">Choose your location</option>
+                                <option value="city1">New York</option>
+                                <option value="city2">Los Angeles</option>
+                                <option value="city3">Chicago</option>
+                                <option value="city4">Houston</option>
+                            </select>
+                        </div>
+                    
+                        <div class="charges">
+                            <p><i class="fas fa-dollar-sign"></i> Delivery Charges: <span id="delivery-charge">-</span></p>
+                        </div>
+                    </div>
+                                        
+            
+                    <!-- Seller Information -->
+                    <div class="seller-info">
+                        <p><i class="fas fa-store"></i> Sold by: <b>OSMS</b></p>
+                    </div>
+                                        <!-- Payment Options -->
+                    <div class="payment-options">
+                        <p><i class="fas fa-lock"></i> Secure Payment: 
+                            <li>Credit Card</li> <li> PayPal</li> <li>Cash on Delivery</li> <li>Payoneer</li> </p>
+                    </div>
+            
+                    <!-- Warranty & Returns -->
+                    <div class="warranty">
+                        <p><i class="fas fa-sync-alt"></i> 30-day Return & Replacement Policy</p>
+                    </div>
+                    <div class="de"></div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="container3">
+            <span class="Other-Products">
+                <h2 class="headings">Other Products you might like</h2>
+                <div class="Boxes" id="electronics">
+                    <div class="box-1 box">
+                        <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div>
+                    <div class="box-2 box">
+                    <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div>
+                    <div class="box-3 box">
+                    <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div>
+                    <div class="box-4 box">
+                        <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div>
+                    <div class="box-5 box">
+                        <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div> 
+                    <div class="box-5 box">
+                        <div class="product-img"></div>
+                        <a href="./pages/Product.html"><p class="p-name">Bagwati</p></a>
+                        <p class="price">Rs. 199</p>
+                    </div> 
+                </div>
+            </span>
+        </section>
+        <section class="review-container">
+            <div class="review-summary">
+                <h2 class="headings">Customer Reviews</h2>
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half"></span>
+                        <p>(250 Reviews)</p>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar"><span>5 Stars</span> <div class="bar"><div class="filled" style="width: 70%;"></div></div> <span>70%</span></div>
+                        <div class="rating-bar"><span>4 Stars</span> <div class="bar"><div class="filled" style="width: 20%;"></div></div> <span>20%</span></div>
+                        <div class="rating-bar"><span>3 Stars</span> <div class="bar"><div class="filled" style="width: 5%;"></div></div> <span>5%</span></div>
+                        <div class="rating-bar"><span>2 Stars</span> <div class="bar"><div class="filled" style="width: 3%;"></div></div> <span>3%</span></div>
+                        <div class="rating-bar"><span>1 Star</span> <div class="bar"><div class="filled" style="width: 2%;"></div></div> <span>2%</span></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="review-filters">
+                <button class="filter-btn" onclick="filterReviews(5)">5 Star</button>
+                <button class="filter-btn" onclick="filterReviews(4)">4 Star</button>
+                <button class="filter-btn" onclick="filterReviews(3)">3 Star</button>
+                <button class="filter-btn" onclick="filterReviews(2)">2 Star</button>
+                <button class="filter-btn" onclick="filterReviews(1)">1 Star</button>
+            </div>
+        
+            <div class="reviews" id="reviews-list">
+                <div class="review" data-rating="5">
+                    <div class="review-header">
+                        <img src="../images/user1.jpg" alt="User" class="user-avatar">
+                        <div>
+                            <span class="review-author">John Doe</span>
+                            <span class="verified">✔ Verified Purchase</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Amazing product! The quality exceeded my expectations.</p>
+                    <div class="review-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="review-images">
+                        <img src="../images/review1.jpg" alt="Product Image">
+                    </div>
+                    <div class="review-actions">
+                        <button onclick="markHelpful(this)">Helpful (12)</button>
+                        <button onclick="reportReview()">Report</button>
+                    </div>
+                </div>
+                <div class="review" data-rating="4">
+                    <div class="review-header">
+                        <img src="../images/user2.jpg" alt="User" class="user-avatar">
+                        <div>
+                            <span class="review-author">Jane Smith</span>
+                            <span class="verified">✔ Verified Purchase</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Good product, but shipping took a bit longer than expected.</p>
+                    <div class="review-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="review-images">
+                        <img src="../images/review2.jpg" alt="Product Image">
+                    </div>
+                    <div class="review-actions">
+                        <button onclick="markHelpful(this)">Helpful (8)</button>
+                        <button onclick="reportReview()">Report</button>
+                    </div>
+                </div>
+            
+                <div class="review" data-rating="3">
+                    <div class="review-header">
+                        <img src="../images/user3.jpg" alt="User" class="user-avatar">
+                        <div>
+                            <span class="review-author">Alice Brown</span>
+                            <span class="verified">✔ Verified Purchase</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Decent product, but could be improved in terms of durability.</p>
+                    <div class="review-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="review-images">
+                        <img src="../images/review3.jpg" alt="Product Image">
+                    </div>
+                    <div class="review-actions">
+                        <button onclick="markHelpful(this)">Helpful (5)</button>
+                        <button onclick="reportReview()">Report</button>
+                    </div>
+                </div>
+                <div class="write-comment-btn">
+                    <button onclick="openCommentForm()">Write a Review</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class="Up" id="scrollUp">
+        <i class="fa-solid fa-chevron-up"></i>
+        </span>
+        <div class="Foot-container">
+
+        </div>
+    </footer>  
 </body>
 <script src="../app.js"></script>
 </html>

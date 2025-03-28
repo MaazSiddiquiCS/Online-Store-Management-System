@@ -61,7 +61,7 @@ function initializeMenuBtn() {
 function loadfooter()
 {
     const footer=document.querySelector(".Foot-container");
-    fetch("components/footer.html")
+    fetch("../components/footer.html")
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -73,8 +73,13 @@ function loadfooter()
     })
     .catch((error) => console.error("Error loading footer:", error));
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     loadNavbar();
     loadfooter();
+});
+document.getElementById("scrollUp").addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling effect
+    });
 });

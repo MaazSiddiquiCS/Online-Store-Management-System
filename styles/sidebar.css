@@ -51,3 +51,37 @@ ul li{
     list-style: none;
     font-size: 18px;
 }
+/* Responsive Design for Mobile Screens */
+@media screen and (max-width: 768px) {
+    /* Adjust Sidebar for smaller screens */
+    .Sidebar {
+        width: 240px;  /* Reduce width of Sidebar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+        z-index: 1000;
+    }
+
+    .Sidebar .all i {
+        font-size: 20px;  /* Reduce icon size */
+    }
+
+    .Sidebar .all {
+        display: inline-block;
+    }
+
+    .Category,
+    .Popular,
+    .Account,
+    .FAQs {
+        margin-left: 15px;  /* Reduce margin for mobile */
+        margin-top: 15px;  /* Adjust top margin */
+    }
+
+    ul li {
+        font-size: 16px;  /* Reduce font size */
+        margin-top: 10px;  /* Adjust margin */
+    }
+}

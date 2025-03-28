@@ -43,7 +43,7 @@
 }
 .border:hover{
     border: 2px solid white;
-    border-radius: 40px;
+    border-radius: 8px;
 }
 .nav-search {
     padding: 5px; 
@@ -100,4 +100,93 @@
 .account i{
     font-size: 24px;
     margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+         /* Better spacing for mobile */
+        padding: 5px;
+        width: 100vw; /* Ensures it stays within the screen */
+        overflow: hidden; /* Prevents overflow issues */
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .border:hover{
+        border: 2px solid transparent;
+        border-radius: 40px;
+    }
+    .logo {
+        width: 40px; /* Smaller logo for mobile */
+        height: 25px;
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .all {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .all i {
+        font-size: 20px; /* Smaller icon for mobile */
+    }
+
+    .nav-search {
+         /* Adjust search bar width */
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .search-input {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .cart {
+        margin-left: 10px;
+    }
+
+    .cart i {
+        font-size: 20px; /* Smaller cart icon for mobile */
+    }
+
+    .account {
+        width: auto; /* Allow account container to shrink */
+        margin-right: 20px;
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .account p {
+        display: none; /* Hide account text on mobile */
+    }
+
+    .account i {
+        font-size: 20px; /* Smaller account icon for mobile */
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .Navbar {
+        padding: 0 5px;
+    }
+
+    .nav-search {
+        width: 52%; /* Further adjust search bar width */
+    }
+
+    .navbar .logo {
+        width:25px;
+        height: 20px;
+    }
+
+    .cart i,
+    .account i {
+        font-size: 20px;
+    }
+
+    .all i {
+        font-size: 20px;
+    }
 }
